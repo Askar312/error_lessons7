@@ -1,8 +1,7 @@
-print ('Бай банк!')
-sum = eval(input('Введите сумму:'))
-while sum < 50000:
-    print('Сумма должна быть больше или равно $50,000')
-    a = eval(input ('Введите сумму:$'))
-if sum > 50000:
-    total = sum * (3.37 / 100)
-    print ('Процентная сумма  (3.37%): $', round(total, 2))
+functions = ['all','any','abs','min','eval','reversed',
+            'max','slice','round',]
+func = input("Введите функцию : ")
+if func in functions:
+    print('Такая функция есть')
+else:
+    print('Такой функции нету')
